@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+/* --------------------------Font_variation------------------------- */
+/* Italic Font */
+.italic {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* inter */
+.inter {
+    font-family: "Inter", serif;
+    font-weight: 400;
+}
+
+/* -------------------body_styles-------------------- */
+body {
+    margin: 0 auto;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    background-color: black;
+}
+
+
+/* ------------------colors--------------------- */
+.orange {
+    color: rgb(230, 83, 60);
+}
+
+/* Shared Styles */
+.flex {
+    display: flex;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+
+
+/* Navigation bar related styles */
+
+header {
+    width: 100%;
+    background: linear-gradient(to top, black, rgba(39, 38, 38, 0.76) 100%);
+}
+
+nav,
+.banner-section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1044px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.site-title {
+    font-style: italic;
+    font-weight: 800;
+
+}
+
+.navigation-bar {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-bar .active {
+    background-color: rgb(230, 83, 60);
+}
+
+.navigation-bar h5 {
+    /* background-color: rgb(230, 83, 60); */
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.193);
+    border-radius: 46px;
+}
+
+/* banner related Styles */
+.banner-section {
+    gap: 87px;
+}
+
+.banner-content,
+.box-container {
+    flex-direction: column;
+    gap: 28px;
+    border: 2px solid white;
+}
+
+.banner-content .headline {
+    font-size: 4.875rem;
+    color: white;
+    font-weight: 900;
+    line-height: 5rem;
+    text-align: left;
+}
+
+#handwrite {
+    font-size: 7rem;
+}
+
+.banner-content .section-description {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+.button-container {
+    border: 1px solid lime;
+    justify-content: start;
+    align-items: center;
+    gap: 14px;
+}
+
+.button-container .btn1,
+.btn2 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 42px;
+    padding: 16px 40px;
+    background: rgb(230, 83, 60);
+
+}
+
+.btn2 {
+    background: none;
+    border: 1px solid white;
+}
+
+
+/*------------------box-content---------------------*/
+.card-1,
+.card-2 {
+    position:absolute;
+    width: 206px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+}
+.card-1{
+    right: 34%;
+    bottom: 40%;
+}
+.card-2{
+    top: 20%;
+    right: 16%;
+}
+.card-1 .blob {
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+    width: 40px;
+    height: 40px;
+}
+
+.card-content>.card-number {
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.card-content p {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.8rem;
+}
